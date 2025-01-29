@@ -1,14 +1,45 @@
+"use client";
+
+import { Particles } from "@/components/ui/particles";
 import { AuroraText } from '@/components/ui/aurora-text'
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 import React from 'react'
+import Button from "./Button";
 
 export default function HeroSection() {
+  const { resolvedTheme } = useTheme();
+  const [color, setColor] = useState("#ffffff");
+
+  useEffect(() => {
+    setColor(resolvedTheme === "dark" ? "#ffffff" : "#000000");
+  }, [resolvedTheme]);
+
   return (
-    <section className='px-24 py-8'>
-        <h1 className="text-6xl font-bold">Transformez votre site web en un produit numérique performant.</h1>
-        <h2 className="text-3xl mt-6">Spécialiste en optimisation de <AuroraText>sites web</AuroraText>, j'aide à attirer plus de 
+    <section className='py-8'>
+      <div className="relative flex h-[850px] md:h-[650px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
+        <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl px-28">
+          Transformez votre site web en un produit numérique <AuroraText>performant</AuroraText>
+        </h1>
+        <span className="pointer-events-none z-10 whitespace-pre-wrap leading-none px-28">
+          {/* <h1 className="text-6xl font-bold">Transformez votre site web en un produit numérique <AuroraText> performant</AuroraText>.</h1> */}
+          <h2 className="text-3xl mt-6">Spécialiste en optimisation de sites web, j'aide à attirer plus de
             clients en mettant l'accent sur le référencement,
-             la fonctionnalité et le design. Découvrez des solutions numériques 
-             sur mesure pour améliorer votre présence en ligne.</h2>
+            la fonctionnalité et le design. Découvrez des solutions numériques
+            sur mesure pour améliorer votre présence en ligne.</h2>
+        </span>
+        <Button variant="primary" onClick={() => alert("Clic sur Primary!")}>
+          Contactez moi
+        </Button>
+        <Particles
+          className="absolute inset-0 z-0"
+          quantity={100}
+          ease={80}
+          color={color}
+          refresh
+        />
+      </div>
     </section>
   )
 }
+
