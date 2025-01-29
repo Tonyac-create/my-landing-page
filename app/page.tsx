@@ -1,6 +1,7 @@
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import HeroSection from "./components/HeroSection";
+import ProjectsSection from "./components/ProjectsSection";
 import TestimonialSection from "./components/TestimonialSection";
 
 
@@ -11,6 +12,7 @@ export default function Home() {
       <main className="flex flex-col gap-8">
         <HeroSection />
         <TestimonialSection />
+        <ProjectsSection />
       </main>
       <Footer />
     </div>
