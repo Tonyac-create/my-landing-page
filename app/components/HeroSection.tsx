@@ -6,6 +6,7 @@ import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import React from 'react'
 import Button from "./Button";
+import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 export default function HeroSection() {
   const { resolvedTheme } = useTheme();
@@ -28,9 +29,13 @@ export default function HeroSection() {
             la fonctionnalité et le design. Découvrez des solutions numériques
             sur mesure pour améliorer votre présence en ligne.</h2>
         </span>
-        <Button variant="primary" onClick={() => alert("Clic sur Primary!")}>
-          Contactez moi
-        </Button>
+        <ShimmerButton className="shadow-2xl mt-10 hover:scale-110" onClick={() => alert("Clic sur Primary!")}>
+          <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
+            {/* <Button variant="primary" onClick={() => alert("Clic sur Primary!")}> */}
+              Contactez moi
+            {/* </Button> */}
+          </span>
+        </ShimmerButton>
         <Particles
           className="absolute inset-0 z-0"
           quantity={100}
