@@ -9,7 +9,7 @@ export default function About() {
     return (
         <div className="flex flex-col min-h-screen">
             <Header />
-            <main className="flex flex-col gap-8">
+            <main className="flex flex-col gap-7">
                 <AboutSection />
                 <ContactSection />
             </main>
