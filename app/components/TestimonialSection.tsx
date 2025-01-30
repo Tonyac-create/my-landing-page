@@ -3,7 +3,7 @@ import TestimonialCard from "./TestimonialCard";
 export default function TestimonialSection() {
   return (
     <section className="px-28 flex flex-col justify-center gap-9 my-14">
-      <h1 className="text-4xl font-bold text-center mb-6">Ils m'ont fait confiance</h1>
+      <h1 className="text-4xl font-bold text-center mb-6">{`Ils m'ont fait confiance`}</h1>
       <div className="flex justify-center gap-9">
         <TestimonialCard
           name="Fabienne"
