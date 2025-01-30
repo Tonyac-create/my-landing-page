@@ -32,10 +32,10 @@ export default function HeroSection() {
           Transformez votre site web en un produit numérique <AuroraText>performant</AuroraText>
         </h1>
         <span className="pointer-events-none z-10 whitespace-pre-wrap leading-none px-28">
-          <h2 className="text-3xl mt-6">Spécialiste en optimisation de sites web, j'aide à attirer plus de
+          <h2 className="text-3xl mt-6">{`Spécialiste en optimisation de sites web, j'aide à attirer plus de
             clients en mettant l'accent sur le référencement,
             la fonctionnalité et le design. Découvrez des solutions numériques
-            sur mesure pour améliorer votre présence en ligne.</h2>
+            sur mesure pour améliorer votre présence en ligne.`}</h2>
         </span>
         <ShimmerButton className="shadow-2xl mt-10 hover:scale-110" onClick={scrollToContact}>
           <span className="whitespace-pre-wrap text-center text-sm font-medium leading-none tracking-tight text-white dark:from-white dark:to-slate-900/10 lg:text-lg">
