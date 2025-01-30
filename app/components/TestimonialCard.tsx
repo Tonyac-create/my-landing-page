@@ -11,10 +11,10 @@ interface TestimonialCardProps {
 }
 
 export default function TestimonialCard({
-    name = "Fabienne",
-    role = "PO/Scrum Master",
-    testimonial = "J'ai eu l'opportunité de travailler avec Angélique sur la création d'un site web responsive, vitrine pour notre association d'inclusion informatique GUILD OPEN TECH, et notre collaboration a été une véritable réussite. Angélique se distingue par son excellent esprit de collaboration, sa capacité à faire des choix techniques judicieux et à trouver des solutions efficaces face aux défis rencontrés. Toujours prête à partager ses connaissances, elle a joué un rôle clé dans la réussite de notre projet. Sa rigueur, son organisation et son enthousiasme ont rendu le travail avec elle à la fois agréable et productif. Je recommande vivement Angélique pour tout projet nécessitant une développeuse web compétente, engagée et ayant un sens aigu de l'esprit collaboratif.",
-    color = ["#A07CFE", "#FE8FB5", "#FFBE7B"],
+    name,
+    role,
+    testimonial,
+    color,
     linkedinUrl
 }: TestimonialCardProps) {
     return (

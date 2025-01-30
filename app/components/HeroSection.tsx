@@ -23,7 +23,6 @@ export default function HeroSection() {
           Transformez votre site web en un produit numérique <AuroraText>performant</AuroraText>
         </h1>
         <span className="pointer-events-none z-10 whitespace-pre-wrap leading-none px-28">
-          {/* <h1 className="text-6xl font-bold">Transformez votre site web en un produit numérique <AuroraText> performant</AuroraText>.</h1> */}
           <h2 className="text-3xl mt-6">Spécialiste en optimisation de sites web, j'aide à attirer plus de
             clients en mettant l'accent sur le référencement,
             la fonctionnalité et le design. Découvrez des solutions numériques
