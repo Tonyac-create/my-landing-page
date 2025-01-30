@@ -9,8 +9,8 @@ export default function AboutSection() {
                 <p>Responsable editorial : Angélique Copéré</p>
                 <p>149 Rue Général Leclerc 69430 Beaujeu</p>
                 <p>Téléphone : 06 63 70 48 67</p>
-                <p>Email : angelique.copere@gmail.com</p>
-                <p>Site Web : freedev.fr</p>
+                <p>Email : angelique.copere@free-dev.fr</p>
+                <p>Site Web : free-dev.fr</p>
             </article>
             <article>
                 <h2 className="text-2xl font-bold text-blue-600 mb-4">Hébergement</h2>
@@ -23,7 +23,7 @@ export default function AboutSection() {
             </article>
             <article>
                 <h2 className="text-2xl font-bold text-blue-600 mb-4">Conditions d'utilisation</h2>
-                <p className="mb-6">Ce site (www.freedev.fr) est proposé en différents langages web (HTML, HTML5, Javascript, CSS, etc…)
+                <p className="mb-6">Ce site (www.free-dev.fr) est proposé en différents langages web (HTML, HTML5, Javascript, CSS, etc…)
                     pour un meilleur confort d'utilisation et un graphisme plus agréable,
                     nous vous recommandons de recourir à des navigateurs modernes comme Internet explorer, Safari, Firefox, Google Chrome, etc…
                     Angélique Copéré met en œuvre tous les moyens dont elle dispose, pour assurer une information fiable et une mise à jour fiable de ses sites internet.
@@ -44,7 +44,7 @@ export default function AboutSection() {
             </article>
             <article>
                 <h2 className="text-2xl font-bold text-blue-600 mb-4">Propriété intellectuelle</h2>
-                <p className="mb-6">Tout le contenu du présent sur le site www.freedev.fr, incluant, de façon non limitative,
+                <p className="mb-6">Tout le contenu du présent sur le site www.free-dev.fr, incluant, de façon non limitative,
                     les graphismes, images, textes, vidéos, animations, sons, logos, gifs et icônes ainsi que leur mise en forme sont
                     la propriété exclusive de la société à l'exception des marques, logos ou contenus appartenant à d'autres sociétés partenaires ou auteurs.</p>
                 <p>Toute reproduction, distribution, modification, adaptation, retransmission ou publication, même partielle,
