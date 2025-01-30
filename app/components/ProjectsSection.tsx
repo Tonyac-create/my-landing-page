@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectsSection() {
     return (
-        <section className="px-28 flex flex-col justify-center gap-9 my-14">
+        <section id="projects" className="px-28 flex flex-col justify-center gap-9 my-14">
             <h1 className="text-4xl font-bold text-center mb-6">Mes projets</h1>
             <ProjectCard
                 title="Guild Open Tech"

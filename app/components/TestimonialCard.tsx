@@ -1,6 +1,8 @@
 import { ShineBorder } from "@/components/ui/shine-border";
 import { Linkedin, Quote } from "lucide-react";
 import Link from "next/link";
+import Image from 'next/image'
+import linkedin from "@/public/linkedin.svg"
 
 interface TestimonialCardProps {
     name: string;
@@ -37,7 +39,8 @@ export default function TestimonialCard({
                         rel="noopener noreferrer"
                         className="hover:text-blue-600 transition-colors flex items-center gap-2 mt-auto"
                     >
-                        <Linkedin className="text-blue-600"/> Profil LinkedIn
+                        <Image src={linkedin} alt="logo" width={24} height={24} />
+                        Profil LinkedIn
                     </Link>
                 )}
             </ShineBorder>
