@@ -19,7 +19,7 @@ export default function ProjectCard({ title, image, description, site, tags }: P
     };
     return (
         <article className="flex gap-4">
-            <Image src={image} alt="logo" width={500} height={300} className="rounded-md" />
+            <Image src={image} alt="logo" width={500} height={300} className="rounded-md" style={{ width: 'auto', height: 'auto' }}/>
             <div>
                 <h1 className="text-4xl font-bold">{title}</h1>
                 {tags.length > 0 && (

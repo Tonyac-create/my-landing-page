@@ -1,5 +1,5 @@
 import { ShineBorder } from "@/components/ui/shine-border";
-import { Linkedin, Quote } from "lucide-react";
+import { Quote } from "lucide-react";
 import Link from "next/link";
 import Image from 'next/image'
 import linkedin from "@/public/linkedin.svg"

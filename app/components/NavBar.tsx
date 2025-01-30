@@ -1,6 +1,8 @@
-import React from 'react'
+import Link from 'next/link';
+import React, { useState } from 'react'
 
 export default function NavBar() {
+
     const scrollToSection = (sectionId: string) => {
         const section = document.getElementById(sectionId);
         if (section) {
@@ -42,6 +44,9 @@ export default function NavBar() {
                         }}
                         className='hover:text-blue-600'
                     > Contact</a>
+                </li>
+                <li>
+                    <Link href="/about" className='hover:text-blue-600'>A propos</Link>
                 </li>
             </ul>
         </nav>

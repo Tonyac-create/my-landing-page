@@ -16,7 +16,7 @@ export default function Header() {
     }
   };
   return (
-    <header className="flex justify-between items-center w-full px-8 py-4">
+    <header className="flex justify-between items-center w-full px-8 py-4 fixed top-0 z-50 bg-white">
       <Image src="/free.png" alt="logo" width={80} height={80} />
       <NavBar />
       <ShimmerButton className="shadow-2xl hover:scale-110" onClick={scrollToContact}>

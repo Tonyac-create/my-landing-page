@@ -5,7 +5,6 @@ import { AuroraText } from '@/components/ui/aurora-text'
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import React from 'react'
-import Button from "./Button";
 import { ShimmerButton } from "@/components/ui/shimmer-button";
 
 export default function HeroSection() {
@@ -27,7 +26,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className='py-8'>
+    <section className='py-8 mt-40'>
       <div className="relative flex h-[850px] md:h-[650px] w-full flex-col items-center justify-center overflow-hidden rounded-lg border bg-background md:shadow-xl">
         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl px-28">
           Transformez votre site web en un produit numérique <AuroraText>performant</AuroraText>
